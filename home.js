@@ -17,20 +17,20 @@ function changeBackgroundImage() {
   currentImageIndex = nextImageIndex;
 }
 
-// Start the slideshow
 setInterval(changeBackgroundImage, slideshowInterval);
 
-
+// Truncation and Ellipsis
 var cardTexts = document.getElementsByClassName('card-text-truncate');
 for (var i = 0; i < cardTexts.length; i++) {
   $clamp(cardTexts[i], { clamp: 3 });
 }
 
+// Dropdown
 $(document).ready(function() {
   $('.dropdown-toggle').dropdown();
 });
 
-// Add the following JavaScript code
+// Animation
 function isElementInViewport(element) {
   var rect = element.getBoundingClientRect();
   return (
@@ -56,5 +56,4 @@ function handleScroll() {
 
 $(window).on("scroll", handleScroll);
 
-// Initial scroll check on page load
 handleScroll();
