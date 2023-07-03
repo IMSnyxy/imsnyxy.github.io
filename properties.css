@@ -107,74 +107,92 @@ body {
     margin-bottom: 20px;
   }
   
-  /* Card Section */
-  .third-section {
-    background-color: #f9f9f9;
-  }
-  
-  .third-section .container {
-    margin: 0 auto;
-    max-width: 1200px;
-  }
-  
-  .third-section .section-header {
-    text-align: center;
-    font-family: 'Noto Sans', sans-serif;
-    font-weight: 500;
-    font-size: 40px;
-    margin-bottom: 50px;
-  }
-  
-  .third-section .card {
-    margin-bottom: 30px;
-    border: none;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  .third-section .card:hover {
-    transform: translateY(-10px);
-  }
-  
-  .third-section .card-img-top {
-    object-fit: cover;
-    height: 200px;
-  }
-  
-  .third-section .card-body {
-    padding: 20px;
-    text-align: center;
-  }
-  
-  .third-section .card-title {
-    font-family: 'Noto Sans', sans-serif;
-    font-weight: 500;
-    font-size: 24px;
-    margin-bottom: 10px;
-  }
-  
-  .third-section .card-text {
-    font-family: 'Noto Sans', sans-serif;
-    font-weight: 300;
-    font-size: 18px;
-    margin-bottom: 10px;
-    line-height: 1.5;
-  }
-  
-  .third-section .card-price {
-    font-family: 'Noto Sans', sans-serif;
-    font-weight: 500;
-    font-size: 18px;
-    margin-bottom: 5px;
-  }
-  
-  .third-section .card-rent-price {
-    font-family: 'Noto Sans', sans-serif;
-    font-weight: 300;
-    font-size: 14px;
-    color: #666;
-    margin-bottom: 5px;
-  }
+ /* Card Section */
+/* Card Section */
+.third-section {
+  background-color: #f9f9f9;
+}
+
+.third-section .container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.third-section .section-header {
+  text-align: center;
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  margin-bottom: 50px;
+}
+
+.third-section .card {
+  margin-bottom: 30px;
+  border: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.third-section .card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.third-section .card-img-top {
+  object-fit: cover;
+  height: 200px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.third-section .card-body {
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.third-section .card-title {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.third-section .card-text {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.third-section .card-price {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.third-section .card-rent-price {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.third-section .card:hover {
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.third-section .card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+.third-section .card:hover .card-body {
+  transform: translateY(10px);
+}
+
   
   /* Footer */
 .footer {
