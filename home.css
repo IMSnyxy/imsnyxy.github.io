@@ -117,6 +117,10 @@ body {
   transform: translateY(0);
 }
 
+.welcome {
+  margin-top: 50px;
+}
+
 .commentss {
   display: flex;
   justify-content: center;
