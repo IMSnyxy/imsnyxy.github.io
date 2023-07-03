@@ -101,20 +101,16 @@ body {
   height: auto;
 }
 
-.first-section,
-.second-section,
-.third-section {
+/* Animation Styles */
+.slide-up {
   opacity: 0;
-  transition: opacity 1s, transform 1s;
-  transform: translateY(50px);
+  transform: translateY(100px);
+  transition: opacity 0.5s, transform 1s;
 }
 
-/* Animation Styles */
-.first-section.slide-up,
-.second-section.slide-up,
-.third-section.slide-up {
+.slide-up.active {
   opacity: 1;
-  transform: translateY(0);
+  transform: translateX(0);
 }
 
 .welcome {
