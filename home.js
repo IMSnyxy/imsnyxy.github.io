@@ -55,3 +55,7 @@ var cardTexts = document.getElementsByClassName('card-text-truncate');
 for (var i = 0; i < cardTexts.length; i++) {
   $clamp(cardTexts[i], { clamp: 3 });
 }
+
+$(document).ready(function() {
+  $('.dropdown-toggle').dropdown();
+});
