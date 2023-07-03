@@ -127,7 +127,7 @@ body {
   align-items: center;
 }
 
-.comment {
+.coments {
   width: 700px;
   background-color: #f0fdef;
   border-radius: 10px;
@@ -136,11 +136,11 @@ body {
   padding-top: 20px;
 }
 
-.comment h1 {
+.coments h1 {
   font-size: 26px;
 }
 
-.comment p {
+.coments p {
   font-size: 22px;
 }
 
