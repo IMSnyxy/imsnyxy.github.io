@@ -1,66 +1,57 @@
 const images = [
-    "homemain1.png",
-    "homemain2.png",
-    "homemain3.png",
-    "homemain4.png"
-  ];
-  
-  let currentImageIndex = 0;
-  const slideshowInterval = 5000; // Interval in milliseconds (5 seconds)
-  
-  function fadeToBlack(element) {
-    let opacity = 1;
-    const fadeInterval = setInterval(() => {
-      if (opacity > 0) {
-        opacity -= 0.01;
-        element.style.opacity = opacity;
-      } else {
-        clearInterval(fadeInterval);
-        fadeIn(element);
-      }
-    }, 10);
+  "homemain1.png",
+  "homemain2.png",
+  "homemain3.png",
+  "homemain4.png"
+];
+
+let currentImageIndex = 0;
+const slideshowInterval = 5000;
+
+function changeBackgroundImage() {
+  const hheader = document.querySelector(".hheader");
+  const nextImageIndex = (currentImageIndex + 1) % images.length;
+  const nextImageUrl = images[nextImageIndex];
+
+  hheader.style.backgroundImage = `url(${nextImageUrl})`;
+  currentImageIndex = nextImageIndex;
+}
+
+// Start the slideshow
+setInterval(changeBackgroundImage, slideshowInterval);
+
+// Check if the element is in the viewport
+function isElementInViewport(element) {
+  var rect = element.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+// Add "show" class to the sections when they are in the viewport
+function showSections() {
+  var firstSection = document.querySelector('.first-section');
+  var secondSection = document.querySelector('.second-section');
+
+  if (isElementInViewport(firstSection)) {
+    firstSection.classList.add('show');
   }
-  
-  function fadeIn(element) {
-    let opacity = 0;
-    element.style.backgroundImage = `url(${images[currentImageIndex]})`;
-  
-    const fadeInterval = setInterval(() => {
-      if (opacity < 1) {
-        opacity += 0.01;
-        element.style.opacity = opacity;
-      } else {
-        clearInterval(fadeInterval);
-      }
-    }, 10);
+
+  if (isElementInViewport(secondSection)) {
+    secondSection.classList.add('show');
   }
-  
-  function preloadImage(url) {
-    return new Promise((resolve, reject) => {
-      const img = new Image();
-      img.onload = resolve;
-      img.onerror = reject;
-      img.src = url;
-    });
-  }
-  
-  function changeBackgroundImage() {
-    const hheader = document.querySelector(".hheader");
-    const nextImageIndex = (currentImageIndex + 1) % images.length;
-    const nextImageUrl = images[nextImageIndex];
-  
-    preloadImage(nextImageUrl)
-      .then(() => {
-        fadeToBlack(hheader);
-        setTimeout(() => {
-          currentImageIndex = nextImageIndex;
-        }, 1000); // Delay the removal of nextImage to match fade out effect
-      })
-      .catch((error) => {
-        console.error("Failed to preload image:", error);
-      });
-  }
-  
-  // Start the slideshow
-  setInterval(changeBackgroundImage, slideshowInterval);
-  
+}
+
+// Listen for scroll event and show the sections
+window.addEventListener('scroll', showSections);
+
+// Show the sections initially if they are in the viewport on page load
+window.addEventListener('load', showSections);
+
+var cardTexts = document.getElementsByClassName('card-text-truncate');
+for (var i = 0; i < cardTexts.length; i++) {
+  $clamp(cardTexts[i], { clamp: 3 });
+}
