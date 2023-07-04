@@ -67,7 +67,6 @@ body {
     color: #ffffff;
     margin-bottom: 20px;
     text-align: center;
-    color: #fff;
   }
   
   .hhheader h2 {
@@ -201,15 +200,15 @@ a:visited {
 
 /* Animation Styles */
 .slide-up {
-  opacity: 0.5;
+  opacity: 0;
   transform: translateY(100px);
-  transition: opacity 0.5s, transform 1s;
+  transition: opacity 0.5s, transform 0.5s;
 }
 
 .slide-up.active {
   opacity: 1;
   transform: translateY(0px);
-  transition: opacity 0.5s, transform 0.5s ease-in-out;
+  transition: opacity 1s, transform 0.5s ease-out;
 }
 
   /* Footer */
