@@ -156,14 +156,14 @@ body {
 .third-section .card-title {
   font-family: 'Noto Sans', sans-serif;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 22px;
   margin-bottom: 10px;
 }
 
 .third-section .card-text {
   font-family: 'Noto Sans', sans-serif;
   font-weight: 300;
-  font-size: 18px;
+  font-size: 13px;
   margin-bottom: 10px;
   line-height: 1.5;
 }
@@ -171,7 +171,7 @@ body {
 .third-section .card-price {
   font-family: 'Noto Sans', sans-serif;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 5px;
 }
 
