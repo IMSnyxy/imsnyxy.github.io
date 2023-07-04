@@ -20,7 +20,7 @@ $(document).ready(function() {
     $(".slide-up").each(function() {
       var elementOffset = $(this).offset().top;
       
-      if (scrollTop > elementOffset - windowHeight + 200) {
+      if (scrollTop > elementOffset - windowHeight) {
         $(this).addClass("active");
         console.log("Detected");
       }
