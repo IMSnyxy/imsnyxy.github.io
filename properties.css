@@ -1,112 +1,112 @@
 /* Global Styles */
 body {
-    font-family: 'Noto Sans', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f9f9f9;
-  }
-  
+  font-family: 'Noto Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 15px;
-  }
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
 
 /* Navigation Bar */
 .navbar {
-    background-color: rgba(0, 0, 0, 0.541);
-    width: 100%;
-    z-index: 999;
-  }
-  
-  #nav {
-    position: sticky;
-    top: 0;
-    z-index: 999;
-  }
-  
-  .sticky {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 999;
-  }
-  
-  .navbar-brand {
-    color: #fff;
-    font-weight: bold;
-  }
-  
-  .navbar-nav .nav-link {
-    font-family: 'Noto Sans', sans-serif;
-    font-weight: 500;
-    color: #fff;
-    margin-left: 15px;
-  }
+  background-color: rgba(0, 0, 0, 0.541);
+  width: 100%;
+  z-index: 999;
+}
 
-  .navbar-nav .nav-link:hover {
-    color: #a5a5a5;
-  }
-  
-  /* Header */
-  .hhheader {
-    background-color: #000000;
-    width: 100%;
-    padding: 130px 0;
-    margin-top: -80px;
-    background-image: url("homemain4.png");
-    background-size: cover;
-    background-position: center;
-    text-align: center;
-  }
-  
-  .hhheader h1 {
-    font-family: 'Noto Sans', sans-serif;
-    font-size: 42px;
-    font-weight: 600;
-    color: #ffffff;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  
-  .hhheader h2 {
-    font-family: 'Noto Sans', sans-serif;
-    font-weight: 500;
-    font-size: 18px;
-    margin: 20px 40px 0 40px;
-    text-align: center;
-    color: #ffffff;
-  }
-  
-  .btn-green:hover {
-    background-color: #006400;
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.8);
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  /* Main Section */
-  .main-section {
-    padding: 100px 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  
-  .main-section h2 {
-    font-family: 'Noto Sans', sans-serif;
-    font-weight: 500;
-    font-size: 30px;
-    margin-bottom: 20px;
-  }
-  
-  .main-section p {
-    font-family: 'Noto Sans', sans-serif;
-    font-weight: 300;
-    font-size: 18px;
-    margin-bottom: 20px;
-  }
-  
+#nav {
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.navbar-brand {
+  color: #fff;
+  font-weight: bold;
+}
+
+.navbar-nav .nav-link {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 500;
+  color: #fff;
+  margin-left: 15px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #a5a5a5;
+}
+
+/* Header */
+.hhheader {
+  background-color: #000000;
+  width: 100%;
+  padding: 130px 0;
+  margin-top: -80px;
+  background-image: url("homemain4.png");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.hhheader h1 {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 42px;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.hhheader h2 {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  margin: 20px 40px 0 40px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.btn-green:hover {
+  background-color: #006400;
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.8);
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Main Section */
+.main-section {
+  padding: 100px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-section h2 {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.main-section p {
+  font-family: 'Noto Sans', sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
 /* Card Section */
 .col-lg-3 {
   margin-bottom: 20px;
@@ -139,6 +139,7 @@ body {
 .third-section .card:hover {
   transform: translateY(-10px) scale(1.05);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.7);
+  transition: transform 0.3s;
 }
 
 .third-section .card-img-top {
@@ -158,6 +159,8 @@ body {
   font-weight: 500;
   font-size: 22px;
   margin-bottom: 10px;
+  color: #000;
+  text-decoration: none;
 }
 
 .third-section .card-text {
@@ -166,6 +169,8 @@ body {
   font-size: 13px;
   margin-bottom: 10px;
   line-height: 1.5;
+  color: #000;
+  text-decoration: none;
 }
 
 .third-section .card-price {
@@ -173,14 +178,8 @@ body {
   font-weight: 500;
   font-size: 16px;
   margin-bottom: 5px;
-}
-
-.third-section .card-rent-price {
-  font-family: 'Noto Sans', sans-serif;
-  font-weight: 300;
-  font-size: 14px;
-  color: #666;
-  margin-bottom: 5px;
+  color: #2e742e;
+  text-decoration: none;
 }
 
 .third-section .card:hover .card-img-top {
@@ -191,12 +190,22 @@ body {
   transform: translateY(10px);
 }
 
-a:hover,
-a:link,
-a:active,
-a:visited {
-  color: #000000;
+a:not(.card-text):link {
+  text-decoration: none;
 }
+
+.third-section .card::before {
+  background-color: #fff;
+  transition: opacity 1s ease-in-out;
+}
+
+.third-section .card:hover {
+  background-color: #e2fde2;
+  transform: translateY(-10px) scale(1.05);
+  transition: transform 1s ease-in-out;
+}
+
+
 
 /* Animation Styles */
 .slide-up {
@@ -211,166 +220,163 @@ a:visited {
   transition: opacity 1s, transform 0.5s ease-out;
 }
 
-  /* Footer */
+/* Footer */
 .footer {
-    background-color: #333;
-    color: #fff;
-    padding: 40px 0;
-    font-size: 14px;
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0;
+  font-size: 14px;
+}
+
+.footer h4 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.footer p,
+.footer ul {
+  margin-bottom: 20px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+.footer ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.social-icons a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-color: #666;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 18px;
+  line-height: 40px;
+  text-align: center;
+  margin-right: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.social-icons a:hover {
+  background-color: #555;
+}
+
+@media (max-width: 992px) {
+  .main-section {
+    flex-direction: column;
+    text-align: center;
   }
-  
-  .footer h4 {
-    font-size: 20px;
-    font-weight: 600;
-    margin-bottom: 20px;
+
+  .main-section h2 {
+    font-size: 26px;
   }
-  
-  .footer p, .footer ul {
-    margin-bottom: 20px;
+
+  .main-section p {
+    font-size: 16px;
   }
-  
-  .footer ul {
-    list-style: none;
-    padding: 0;
+}
+
+@media (max-width: 768px) {
+  .navbar-collapse {
+    padding-top: 10px;
   }
-  
-  .footer ul li {
+
+  .navbar-nav .nav-item {
+    text-align: center;
     margin-bottom: 10px;
   }
-  
-  .footer ul li a {
-    color: #fff;
-    text-decoration: none;
+
+  .hhheader h1 {
+    font-size: 40px;
   }
-  
-  .social-icons a {
-    display: inline-block;
-    width: 40px;
-    height: 40px;
-    background-color: #666;
-    color: #fff;
-    border-radius: 50%;
+
+  .hhheader h2 {
+    font-size: 16px;
+    margin: 10px 60px 0 60px;
+  }
+
+  .main-section {
+    padding: 80px 0;
+  }
+
+  .main-section h2 {
+    font-size: 24px;
+  }
+
+  .main-section p {
+    font-size: 16px;
+  }
+
+  .third-section .card-img-top {
+    height: 180px;
+  }
+
+  .third-section .card-title {
+    font-size: 20px;
+  }
+
+  .third-section .card-text {
+    font-size: 16px;
+  }
+
+  .third-section .card-price {
+    font-size: 16px;
+  }
+
+  .third-section .card-rent-price {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hhheader h1 {
+    font-size: 32px;
+  }
+
+  .hhheader h2 {
+    font-size: 14px;
+    margin: 10px 60px 0 60px;
+  }
+
+  .main-section {
+    padding: 60px 0;
+  }
+
+  .main-section h2 {
+    font-size: 22px;
+  }
+
+  .main-section p {
+    font-size: 14px;
+  }
+
+  .third-section .card-img-top {
+    height: 160px;
+  }
+
+  .third-section .card-title {
     font-size: 18px;
-    line-height: 40px;
-    text-align: center;
-    margin-right: 10px;
-    transition: background-color 0.3s ease;
   }
-  
-  .social-icons a:hover {
-    background-color: #555;
-  }
-  
-  @media (max-width: 992px) {
-    .main-section {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .main-section h2 {
-      font-size: 26px;
-    }
-  
-    .main-section p {
-      font-size: 16px;
-    }
-  }
-  
-  @media (max-width: 768px) {
-    
-    .navbar-collapse {
-        padding-top: 10px;
-      }
-    
-    .navbar-nav .nav-item {
-        text-align: center;
-        margin-bottom: 10px;
-    }
 
-    .hhheader h1 {
-      font-size: 40px;
-    }
-  
-    .hhheader h2 {
-      font-size: 16px;
-      margin: 10px 60px 0 60px;
-    }
-  
-    .main-section {
-      padding: 80px 0;
-    }
-  
-    .main-section h2 {
-      font-size: 24px;
-    }
-  
-    .main-section p {
-      font-size: 16px;
-    }
-  
-    .third-section .card-img-top {
-      height: 180px;
-    }
-  
-    .third-section .card-title {
-      font-size: 20px;
-    }
-  
-    .third-section .card-text {
-      font-size: 16px;
-    }
-  
-    .third-section .card-price {
-      font-size: 16px;
-    }
-  
-    .third-section .card-rent-price {
-      font-size: 14px;
-    }
-  
+  .third-section .card-text {
+    font-size: 14px;
   }
-  
-  @media (max-width: 576px) {
-    .hhheader h1 {
-      font-size: 32px;
-    }
-  
-    .hhheader h2 {
-      font-size: 14px;
-      margin: 10px 60px 0 60px;
-    }
-  
-    .main-section {
-      padding: 60px 0;
-    }
-  
-    .main-section h2 {
-      font-size: 22px;
-    }
-  
-    .main-section p {
-      font-size: 14px;
-    }
-  
-    .third-section .card-img-top {
-      height: 160px;
-    }
-  
-    .third-section .card-title {
-      font-size: 18px;
-    }
-  
-    .third-section .card-text {
-      font-size: 14px;
-    }
-  
-    .third-section .card-price {
-      font-size: 14px;
-    }
-  
-    .third-section .card-rent-price {
-      font-size: 12px;
-    }
 
+  .third-section .card-price {
+    font-size: 14px;
   }
-  
+
+  .third-section .card-rent-price {
+    font-size: 12px;
+  }
+}
