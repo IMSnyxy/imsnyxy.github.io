@@ -50,6 +50,7 @@ function handleScroll() {
     
     if (scrollTop > elementOffset - windowHeight + 200) {
       $(this).addClass("active");
+      console.log("Detected");
     }
   });
 }
@@ -57,3 +58,4 @@ function handleScroll() {
 $(window).on("scroll", handleScroll);
 
 handleScroll();
+

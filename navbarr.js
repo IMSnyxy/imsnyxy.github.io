@@ -1,28 +1,39 @@
-// Add "show" class to the sections when they are in the viewport
-function showSections() {
-    var firstSection = document.querySelector('.first-section');
-    var secondSection = document.querySelector('.second-section');
-  
-    if (isElementInViewport(firstSection)) {
-      firstSection.classList.add('show');
+// Dropdown
+$(document).ready(function() {
+  $('.dropdown-toggle').dropdown();
+});
+
+// Animation
+function isElementInViewport(element) {
+  var rect = element.getBoundingClientRect();
+  return (
+    rect.top >= 0 &&
+    rect.left >= 0 &&
+    rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+  );
+}
+
+function handleScroll() {
+  var windowHeight = $(window).height();
+  var scrollTop = $(window).scrollTop();
+
+  $(".slide-up").each(function() {
+    var elementOffset = $(this).offset().top;
+    
+    if (scrollTop > elementOffset - windowHeight + 200) {
+      $(this).addClass("active");
+      console.log("Detected");
     }
-  
-    if (isElementInViewport(secondSection)) {
-      secondSection.classList.add('show');
-    }
-  }
-  
-  // Listen for scroll event and show the sections
-  window.addEventListener('scroll', showSections);
-  
-  // Show the sections initially if they are in the viewport on page load
-  window.addEventListener('load', showSections);
-  
-  var cardTexts = document.getElementsByClassName('card-text-truncate');
-  for (var i = 0; i < cardTexts.length; i++) {
-    $clamp(cardTexts[i], { clamp: 3 });
-  }
-  
-  $(document).ready(function() {
-    $('.dropdown-toggle').dropdown();
   });
+}
+
+$(window).on("scroll", handleScroll);
+
+handleScroll();
+
+// Truncation and Ellipsis
+var cardTexts = document.getElementsByClassName('card-text-truncate');
+for (var i = 0; i < cardTexts.length; i++) {
+  $clamp(cardTexts[i], { clamp: 3 });
+}
