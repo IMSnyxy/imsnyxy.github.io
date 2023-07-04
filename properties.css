@@ -141,7 +141,7 @@ body {
   background-color: #e2fde2;
   transform: translateY(-12px) scale(1.05);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.8);
-  transition: transform 1s, box-shadow 0.3s ease-out;
+  transition: transform 1s, box-shadow 0.3s ease-out, background-color 1s ease-out;
 }
 
 .third-section .card:hover .card-img-top{
@@ -322,14 +322,14 @@ a:not(.card-text):link {
   }
 
   .third-section .card {
-    margin-left: 40px;
-    margin-right: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
   }
 
   .third-section .card:hover {
     background-color: #e2fde2;
-    transform: translateY(0px) scale(1);
-    transition: transform 0s;
+    transform: translateY(0px) scale(1.02);
+    transition: transform 0.5s, background-color 1s ease-out;
   }
   
   .third-section .card:hover .card-img-top{
