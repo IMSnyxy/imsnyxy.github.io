@@ -134,25 +134,31 @@ body {
   margin-bottom: 30px;
   border: none;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-  transition: transform 0.3s, box-shadow 0.3s ease-in-out;
+  transition: transform 0.3s, box-shadow 1s ease-in-out;
 }
 
 .third-section .card:hover {
-  transform: translateY(-10px) scale(1.05);
+  background-color: #e2fde2;
+  transform: translateY(-12px) scale(1.05);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.7);
-  transition: transform 0.3s;
+  transition: transform 0.3, box-shadow 0.3s ease-in-out;
 }
+
+.third-section .card:hover .card-img-top{
+  transform: scale(1.06);
+  transition: transform 1s;
+}
+
 
 .third-section .card-img-top {
   object-fit: cover;
   height: 200px;
-  transition: transform 0.3s;
+  transition: transform 1s;
 }
 
 .third-section .card-body {
   padding: 20px;
   text-align: center;
-  transition: transform 0.3s;
 }
 
 .third-section .card-title {
@@ -183,28 +189,12 @@ body {
   text-decoration: none;
 }
 
-.third-section .card:hover .card-img-top {
-  transform: scale(1.05);
-}
-
-.third-section .card:hover .card-body {
-  transform: translateY(10px);
-}
 
 a:not(.card-text):link {
   text-decoration: none;
 }
 
-.third-section .card::before {
-  background-color: #fff;
-  transition: opacity 1s ease-in-out;
-}
 
-.third-section .card:hover {
-  background-color: #e2fde2;
-  transform: translateY(-10px) scale(1.05);
-  transition: transform 1s ease-in-out;
-}
 
 
 
