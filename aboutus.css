@@ -68,6 +68,7 @@ body {
     background-image: url(mission.png);
     background-position: center;
     background-size: cover;
+    text-align: center;
   }
 
   .vision-image {
@@ -77,6 +78,7 @@ body {
     background-image: url(vision.png);
     background-position: center;
     background-size: cover;
+    text-align: center;
   }
 
   
