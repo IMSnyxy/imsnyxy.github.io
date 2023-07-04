@@ -102,6 +102,19 @@ body {
     width: 100%;
     height: auto;
   }
+
+  /* Animation Styles */
+  .slide-up {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 0.5s, transform 0.5s;
+  }
+
+  .slide-up.active {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: opacity 1s, transform 0.5s ease-out;
+  }
   
   /* Footer */
   .footer {
