@@ -320,6 +320,22 @@ a:not(.card-text):link {
   .main-section p {
     font-size: 16px;
   }
+
+  .third-section .card {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .third-section .card:hover {
+    background-color: #e2fde2;
+    transform: translateY(0px) scale(1);
+    transition: transform 0s;
+  }
+  
+  .third-section .card:hover .card-img-top{
+    transform: scale(1);
+    transition: transform 0s;
+  }
 }
 
 @media (max-width: 768px) {
