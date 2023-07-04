@@ -178,6 +178,11 @@ body {
     .hheader p {
       font-size: 16px;
     }
+
+    .mission-image,
+    .vision-image {
+      width: 100%;
+    }
   }
   
   @media (max-width: 767.98px) {
