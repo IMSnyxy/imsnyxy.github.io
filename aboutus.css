@@ -1,5 +1,5 @@
 /* Global Styles */
-body {
+  body {
     font-family: 'Noto Sans', sans-serif;
     margin: 0;
     padding: 0;
@@ -145,10 +145,15 @@ body {
   .footer ul li {
     margin-bottom: 10px;
   }
-  
+
   .footer ul li a {
     color: #fff;
     text-decoration: none;
+  }
+  
+  .footer ul li a:hover{
+    color: #27ae60;
+    text-decoration: underline;
   }
   
   .social-icons a {
@@ -167,6 +172,7 @@ body {
   
   .social-icons a:hover {
     background-color: #555;
+    color: #0daa34;
   }
   
   /* Responsive Styles */

@@ -173,6 +173,11 @@ body {
   text-decoration: none;
 }
 
+.footer ul li a:hover{
+  color: #27ae60;
+  text-decoration: underline;
+}
+
 .social-icons a {
   display: inline-block;
   width: 40px;
@@ -189,6 +194,7 @@ body {
 
 .social-icons a:hover {
   background-color: #555;
+  color: #0daa34;
 }
 
 /* Responsive Styles */
