@@ -192,17 +192,6 @@ body {
   margin-top: 20px;
 }
 
-.undo-button {
-  width: 260px;
-  background-color: #FF6666;
-}
-
-.undo-button:hover {
-  width: 260px;
-  background-color: #CC0000;
-  color: #fff;
-}
-
 /* Image Slideshow (in individual properties) */
 .slideshow-container {
   max-width: 100%;
