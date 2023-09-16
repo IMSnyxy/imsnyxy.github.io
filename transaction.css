@@ -62,7 +62,7 @@ input[type="text"], input[type="tel"], inpit[type="number"], input[type="email"]
 }
 
 /* Button Styles */
-.submit-button, .return-button-buy, .undo-button {
+.submit-button, .return-button-buy {
     display: block;
     width: 100%;
     padding: 10px;
@@ -78,11 +78,6 @@ input[type="text"], input[type="tel"], inpit[type="number"], input[type="email"]
     width: 300px;
     background-color: #3498db;
     color: #fff;
-}
-
-.undo-button {
-    width: 260px;
-    background-color: FF6666;
 }
 
 .submit-button:hover {
