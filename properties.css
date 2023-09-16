@@ -163,7 +163,7 @@ body {
     margin-left: 10px;
 }
 
-.return-button {
+.return-button, .undo-button {
   display: inline-block;
   padding: 6px;
   width: 215px;
@@ -194,7 +194,13 @@ body {
 
 .undo-button {
   width: 260px;
-  background-color: FF6666;
+  background-color: #FF6666;
+}
+
+.undo-button:hover {
+  width: 260px;
+  background-color: #CC0000;
+  color: #fff;
 }
 
 /* Image Slideshow (in individual properties) */
