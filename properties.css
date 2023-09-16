@@ -192,6 +192,11 @@ body {
   margin-top: 20px;
 }
 
+.undo-button {
+  width: 260px;
+  background-color: FF6666;
+}
+
 /* Image Slideshow (in individual properties) */
 .slideshow-container {
   max-width: 100%;
