@@ -295,7 +295,6 @@ body {
 /* Card Section */
 .col-lg-3 {
   margin-bottom: 20px;
-  max-width: 20px;
 }
 
 .third-section {
@@ -641,3 +640,4 @@ a:not(.card-text):link {
     font-size: 12px;
   }
 }
+
