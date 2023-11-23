@@ -32,21 +32,25 @@
     }
 
     .login-container {
-      background-color: rgba(27, 27, 27, 0.959);
-      padding: 20px;
+      padding: 45px;
       border-radius: 10px;
-      width: 400px;
+      width: 100%;
+      max-width: 450px;
+      margin: 30px 0 auto;
+      background-color: rgba(0, 0, 0, 0.842);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       text-align: center;
     }
 
     .login-container h6 {
       margin-top: 20px;
       margin-bottom: 20px;
+      text-align: center;
     }
 
     .login-logo {
-      max-width: 100%;
-      height: auto;
+      width: 300px;
+      height: 45px;
       margin-bottom: 20px;
     }
 
@@ -79,19 +83,22 @@
       margin-bottom: 20px;
     }
 
-    .social-buttons {
+    .social-buttons-container {
+      display: flex;
+      margin: auto;
+      justify-content: center;
       margin-top: 20px;
     }
 
     .social-buttons button {
-      margin: auto;
-      width: 60%;
+      width: 100%;
       margin-bottom: 10px;
     }
 
     .btn {
       margin: auto;
-      width: 46%;
+      max-width: 120px;
+      width: 100%;
       margin-bottom: 10px;
     }
 
@@ -113,12 +120,15 @@
 
   <div class="login-container">
 
-    <img src="VistaRealLogo.png" alt="Logo" class="login-logo">
+    <div class="logo-container">
+      <img src="VistaRealLogo.png" alt="Logo" class="login-logo">
+    </div>
 
     <h6>Login with:</h6>
-    <div class="social-buttons text-center">
-      <button type="button" class="btn btn-primary btn-block"><i class="fab fa-facebook-f"></i> Facebook</button>
-      <button type="button" class="btn btn-danger btn-block"><i class="fab fa-google"></i> Google</button>
+
+    <div class="social-buttons-container text-center">
+      <button type="button" class="btn btn-primary"><i class="fab fa-facebook-f"></i> Facebook</button>
+      <button type="button" class="btn btn-danger"><i class="fab fa-google"></i> Google</button>
     </div>
 
     <div class="or"></div>
