@@ -155,7 +155,7 @@ body {
     background-color: #279427;
 }
 
-.buy-button a, .rent-button a, .buy-button a:hover, .rent-button a:hover{
+.buy-button a, .rent-button a, .undo-button a, .buy-button a:hover, .rent-button a:hover, .undo-button a:hover{
   color: #fff;
 }
 
@@ -163,7 +163,7 @@ body {
     margin-left: 10px;
 }
 
-.return-button {
+.return-button, .undo-button {
   display: inline-block;
   padding: 6px;
   width: 215px;
