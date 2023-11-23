@@ -295,7 +295,6 @@ body {
 /* Card Section */
 .col-lg-3 {
   margin-bottom: 20px;
-  max-width: 20px;
 }
 
 .third-section {
@@ -322,22 +321,8 @@ body {
   transition: transform 0.3s, box-shadow 0.3s ease-out;
 }
 
-.third-section .card:hover {
-  background-color: #e2fde2;
-  transform: scale(1.02);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.8);
-  transition: transform 0.3s, box-shadow 0.3s ease-out, background-color 0.3s ease-out;
-}
-
 .third-section .unavailable img {
   filter:brightness(50%);
-}
-
-.third-section .unavailable:hover {
-  background-color: #fde2e2;
-  transform: scale(1.02);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.8);
-  transition: transform 0.3s, box-shadow 0.3s ease-out, background-color 0.3s ease-out;
 }
 
 .third-section .card:hover .card-img-top{

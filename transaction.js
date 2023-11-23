@@ -8,7 +8,7 @@ function validateForm() {
     document.getElementById("age-error-message").textContent = "";
     document.getElementById("contact-error-message").textContent = "";
 
-    let hasErrors = false; // Flag to track errors
+    let hasErrors = false;
 
     if (age.trim() === "") {
         document.getElementById("age-error-message").textContent = "Age is required.";
@@ -32,7 +32,6 @@ function validateForm() {
     }
 
     if (!hasErrors) {
-        // If no errors, redirect to success.html
         window.location.href = "success.html";
     }
 }

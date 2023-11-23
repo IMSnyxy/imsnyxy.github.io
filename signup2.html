@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Sign Up | Vista Real Residences</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,500;0,600;1,200&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon/favicon.png" type="image/png">
+  <link rel="apple-touch-icon" href="favicon/favicon-apple.png">
+  <style>
+    body {
+      font-family: 'Noto Sans', sans-serif;
+      background: url('natura.png') no-repeat center center fixed;
+      background-size: cover;
+      height: 100vh;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+    }
+
+    .login-container {
+      background-color: rgba(27, 27, 27, 0.959);
+      padding: 20px;
+      border-radius: 10px;
+      width: 400px;
+      text-align: center;
+    }
+
+    .login-container h4 {
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      text-align: left;
+      margin-bottom: 25px;
+    }
+
+    .form-group label {
+      margin-bottom: 5px;
+      display: block;
+    }
+
+    .form-control {
+      margin-bottom: 10px;
+    }
+
+    .error-message {
+      color: #dc3545;
+      margin-top: 5px;
+      margin-bottom: 10px;
+    }
+
+    .or {
+      margin-top: 30px;
+      margin-bottom: 30px;
+      padding: 0.5px;
+      background-color: rgba(217, 230, 218, 0.959);
+    }
+
+    .button-container {
+      text-align: center;
+    }
+
+    .btn {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .btn-login {
+      background-color: #28a745;
+      border-color: #28a745;
+      color: #fff;
+    }
+
+  </style>
+</head>
+<body>
+
+<div class="login-container">
+
+  <h4>Create An Account</h4>
+
+  <form id="transaction-form" class="transaction-form" action="#" method="post">
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name">
+      <div id="name-error-message" class="error-message"></div>
+    </div>
+
+    <div class="form-group">
+      <label for="age">Age</label>
+      <input type="text" class="form-control" id="age" name="age" placeholder="Must be at least 18">
+      <div id="age-error-message" class="error-message"></div>
+    </div>
+
+    <div class="form-group">
+      <label for="contact">Contact Number</label>
+      <input type="tel" class="form-control" id="contact" name="contact" placeholder="Must be a valid contact number">
+      <div id="contact-error-message" class="error-message"></div>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email Address (Optional)</label>
+      <input type="email" class="form-control" id="email" name="email" placeholder="Optional">
+      <div id="email-error-message" class="error-message"></div>
+    </div>
+
+    <div class="button-container">
+      <button type="button" class="btn btn-login" onclick="validateForm()">Create Account</button>
+    </div>
+  </form>
+
+</div>
+
+<!-- Bootstrap JS and Font Awesome Icons -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+<script>
+  function validateForm() {
+    const name = document.getElementById("name").value;
+    const age = document.getElementById("age").value;
+    const contact = document.getElementById("contact").value;
+
+    // Clear any previous error messages
+    document.getElementById("name-error-message").textContent = "";
+    document.getElementById("age-error-message").textContent = "";
+    document.getElementById("contact-error-message").textContent = "";
+
+    let hasErrors = false;
+
+    if (age.trim() === "") {
+        document.getElementById("age-error-message").textContent = "Age is required.";
+        hasErrors = true;
+    } else {
+        const ageValue = parseInt(age);
+        if (isNaN(ageValue) || ageValue < 18) {
+            document.getElementById("age-error-message").textContent = "Age must be a valid number and at least 18.";
+            hasErrors = true;
+        }
+    }
+
+    if (name.trim() === "") {
+        document.getElementById("name-error-message").textContent = "Name is required.";
+        hasErrors = true;
+    }
+
+    if (contact.trim() === "" || !/^\d+$/.test(contact)) {
+        document.getElementById("contact-error-message").textContent = "Valid contact number is required.";
+        hasErrors = true;
+    }
+
+    if (!hasErrors) {
+        window.location.href = "success2.html";
+    }
+}
+</script>
+</body>
+</html>

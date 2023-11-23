@@ -64,7 +64,7 @@ input[type="text"], input[type="tel"], inpit[type="number"], input[type="email"]
 /* Button Styles */
 .submit-button, .return-button-buy {
     display: block;
-    width: 100%;
+    width: 300px;
     padding: 10px;
     background-color: #32bd32;
     color: #fff;
@@ -76,12 +76,13 @@ input[type="text"], input[type="tel"], inpit[type="number"], input[type="email"]
 
 .return-button-buy {
     width: 300px;
-    background-color: #3498db;
+    padding: 10px;
+    background-color: #c42828;
     color: #fff;
 }
 
 .submit-button:hover {
-    background-color: #279427;
+    background-color: #df3737;
 }
 
 .button-container {
