@@ -324,7 +324,7 @@ body {
 .third-section .card:hover {
   background-color: #e2fde2;
   transform: scale(1.02);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.966);
   transition: transform 0.3s, box-shadow 0.3s ease-out, background-color 0.3s ease-out;
 }
 
@@ -335,15 +335,9 @@ body {
 .third-section .unavailable:hover {
   background-color: #fde2e2;
   transform: scale(1.02);
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.356);
   transition: transform 0.3s, box-shadow 0.3s ease-out, background-color 0.3s ease-out;
 }
-
-.third-section .card:hover .card-img-top{
-  transform: scale(1.05);
-  transition: transform 0.3s;
-}
-
 
 .third-section .card-img-top {
   object-fit: cover;

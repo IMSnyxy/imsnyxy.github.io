@@ -321,6 +321,11 @@ body {
   transition: transform 0.3s, box-shadow 0.3s ease-out;
 }
 
+.third-section .card:hover {
+  transform: scale(1.02);
+  transition: transform 0.3s, box-shadow 0.3s ease-out, background-color 0.3s ease-out;
+}
+
 .third-section .unavailable img {
   filter:brightness(50%);
 }
