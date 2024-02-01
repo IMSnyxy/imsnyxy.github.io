@@ -234,7 +234,7 @@ body.light-bg {
 }
 
 .hide {
-    translate: 0 -620px;
+    translate: 0 -660px;
     z-index: 0;
 }
 
@@ -262,6 +262,7 @@ body.light-bg {
     .container-buttons {
         margin: 0 auto;
         width: 100%;
+        height: fit-content;
         position: relative;
         display: flex;
         align-items: normal;
