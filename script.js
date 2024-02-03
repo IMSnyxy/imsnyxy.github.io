@@ -61,7 +61,7 @@ function select(days) {
             reset();
             document.getElementById("monday-shape").classList.remove('hide');
             document.getElementById("monday-shape").style.backgroundColor = "transparent";
-            document.getElementById("sunday-shape").style.zIndex = "10";
+            document.getElementById("monday-shape").style.zIndex = "10";
             document.getElementById("monday-shape").style.boxShadow = "0px 0px 37px -3px rgba(255, 115, 0, 0.77)";
             break;
         case 2:
